@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: image-service
+
+# Firebase Configuration
+firebase:
+  bucket:
+    name: imageservice-8bf6c.appspot.com
+  get:
+    image:
+      url: https://firebasestorage.googleapis.com/v0/b/imageservice-8bf6c.appspot.com/o/%s?alt=media
+
+# Server Port Configuration
+server:
+  port: 8089
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
